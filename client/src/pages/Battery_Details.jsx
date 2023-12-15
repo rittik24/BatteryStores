@@ -25,7 +25,7 @@ console.log("token", token)
 
   const singleBatteryData = async () => {
     try {
-      let r = await fetch(`http://localhost:8080/battery/${id}`);
+      let r = await fetch(`https://rich-tick-cloak.cyclic.app/battery/${id}`);
       let d = await r.json();
       setSingleData(d);
     } catch (error) {
@@ -36,7 +36,7 @@ console.log("token", token)
   // add battery to the user cart
   const AddToThecart = async (id) => {
     try {
-      let r = await fetch(`http://localhost:8080/user/cart_product/add/${id}`, {
+      let r = await fetch(`https://rich-tick-cloak.cyclic.app/user/cart_product/add/${id}`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

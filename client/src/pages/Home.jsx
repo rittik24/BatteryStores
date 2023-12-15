@@ -21,7 +21,7 @@ const Home = () => {
   //   get all battery
   const getAllBattery = async () => {
     try {
-      let r = await fetch(`http://localhost:8080/battery`);
+      let r = await fetch(`https://rich-tick-cloak.cyclic.app/battery`);
       let d = await r.json();
       setBattery(d);
     } catch (error) {

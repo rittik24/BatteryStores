@@ -14,7 +14,7 @@ const Payment = () => {
   console.log("total", total);
 
   const getCartProducts = () => {
-    fetch("http://localhost:8080/user/cart_product", {
+    fetch("https://rich-tick-cloak.cyclic.app/user/cart_product", {
       method: "GET",
       headers: {
         "Content-type": "application/json",

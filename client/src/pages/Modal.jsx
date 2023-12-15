@@ -25,11 +25,11 @@ function ModalComp() {
   };
 
   const AddDealerProductDeatils = () => {
-    fetch(`http://localhost:8080/dealer/add`, {
+    fetch(`https://rich-tick-cloak.cyclic.app/dealer/add`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        Authorization: localStorage.getItem("cartoken"),
+        Authorization: localStorage.getItem("batterytoken"),
       },
       body: JSON.stringify(Addproduct),
     })

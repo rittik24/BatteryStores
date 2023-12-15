@@ -27,7 +27,7 @@ const Cart = () => {
 console.log("first",cartData )
   // get cart product
   const getCartProducts = () => {
-    fetch("http://localhost:8080/user/cart_product", {
+    fetch("https://rich-tick-cloak.cyclic.app/user/cart_product", {
       method: "GET",
       headers: {
         "Content-type": "application/json",
@@ -45,7 +45,7 @@ console.log("first",cartData )
   // delete cart product
   const HandleDelete = (id) => {
     fetch(
-      `http://localhost:8080/user/cart_product/delete/${id}`,
+      `https://rich-tick-cloak.cyclic.app/user/cart_product/delete/${id}`,
       {
         method: "DELETE",
         headers: {
@@ -77,7 +77,7 @@ console.log("first",cartData )
   // update quantity
   const UpdateQty = (id, qty) => {
     fetch(
-      `http://localhost:8080/user/cart_product/update/${id}`,
+      `https://rich-tick-cloak.cyclic.app/user/cart_product/update/${id}`,
       {
         method: "PATCH",
         headers: {

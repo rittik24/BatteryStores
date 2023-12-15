@@ -5,7 +5,7 @@ import * as types from "./actiontype";
 export const getData = () => async (dispatch) => {
   try {
     let result = await axios.get(
-      `http://localhost:8080/battery`
+      `https://rich-tick-cloak.cyclic.app/battery`
     );
     dispatch({ type: types.GET_BATTERYS, payload: result.data });
     console.log(result.data);

@@ -29,7 +29,7 @@ export default function Login() {
   const HandleLogin = async () => {
     try {
       let r = await fetch(
-        `http://localhost:8080/user/login`,
+        `https://rich-tick-cloak.cyclic.app/user/login`,
         {
           method: "POST",
           body: JSON.stringify(cred),

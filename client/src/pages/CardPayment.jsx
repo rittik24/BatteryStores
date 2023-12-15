@@ -25,7 +25,7 @@ import {
     };
     console.log(cred);
     const HandlePlaceOrder = () => {
-      fetch(`http://localhost:8080/user/clear_cart`, {
+      fetch(`https://rich-tick-cloak.cyclic.app/user/clear_cart`, {
         method: "DELETE",
         headers: {
           Authorization: localStorage.getItem("batterytoken"),
